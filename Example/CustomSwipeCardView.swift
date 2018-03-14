@@ -1,14 +1,14 @@
 //
-//  CustomTapCardView.swift
-//  Demo
+//  CustomSwipeCardView.swift
+//  Example
 //
-//  Created by jinsei shima on 2018/01/01.
-//  Copyright © 2018 jinsei shima. All rights reserved.
+//  Created by @Senior dev on 2018/01/01.
+//  Copyright © 2018 @Senior dev. All rights reserved.
 //
 
 import UIKit
 
-final class CustomTapCardView: TapCardView {
+final class CustomSwipeCardView: SwipeCardView {
 
     var currentPage: Int = 0
 
@@ -50,14 +50,14 @@ final class CustomTapCardView: TapCardView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func tapGesture(sender: UITapGestureRecognizer) {
+    override func tapGesture(sender: UISwipeGestureRecognizer) {
 
         super.tapGesture(sender: sender)
 
         if sender.state == .ended {
 
             let tapPoint = sender.location(in: self)
-            let tapPosition = getTapPosition(point: tapPoint, size: bounds.size)
+            let tapPosition = getSwipePosition(point: tapPoint, size: bounds.size)
 
             switch tapPosition {
             case .left:
@@ -157,7 +157,7 @@ class TutorialView: UIView {
 
         super.init(frame: frame)
 
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture(sender:)))
+        let tapGesture = UISwipeGestureRecognizer(target: self, action: #selector(tapGesture(sender:)))
         addGestureRecognizer(tapGesture)
 
         let imageView = UIImageView(frame: frame)
@@ -172,7 +172,7 @@ class TutorialView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    @objc func tapGesture(sender: UITapGestureRecognizer) {
+    @objc func tapGesture(sender: UISwipeGestureRecognizer) {
 
         // fade out
         UIView.animate(

@@ -1,24 +1,24 @@
 //
-//  TapCardView.swift
-//  TapCardView
+//  SwipeCardView.swift
+//  SwipeCardView
 //
-//  Created by jinsei shima on 2017/12/31.
-//  Copyright © 2017 jinsei shima. All rights reserved.
+//  Created by @Senior dev on 2018/03/04.
+//  Copyright © 2018 @Senior dev. All rights reserved.
 //
 
 import UIKit
 
-public enum TapPosition {
+public enum SwipePosition {
 
     case left, right, bottom
 }
 
 public protocol CardViewDelegate: class {
 
-    func tapPosition(type: TapPosition, sender: TapCardView)
+    func tapPosition(type: SwipePosition, sender: SwipeCardView)
 }
 
-open class TapCardView: UIView {
+open class SwipeCardView: UIView {
 
     public weak var delegate: CardViewDelegate?
 
@@ -46,7 +46,7 @@ open class TapCardView: UIView {
 
     private func setup() {
 
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapGesture(sender:)))
+        let tapGesture = UISwipeGestureRecognizer(target: self, action: #selector(tapGesture(sender:)))
         addGestureRecognizer(tapGesture)
 
         layer.isDoubleSided = false
@@ -55,17 +55,17 @@ open class TapCardView: UIView {
     // MARK: Public function
 
     @objc
-    open func tapGesture(sender: UITapGestureRecognizer) {
+    open func tapGesture(sender: UISwipeGestureRecognizer) {
 
         if sender.state == .ended {
 
             let tapPoint = sender.location(in: self)
-            let tapPosition = getTapPosition(point: tapPoint, size: bounds.size)
+            let tapPosition = getSwipePosition(point: tapPoint, size: bounds.size)
             delegate?.tapPosition(type: tapPosition, sender: self)
         }
     }
 
-    public func getTapPosition(point: CGPoint, size: CGSize) -> TapPosition {
+    public func getSwipePosition(point: CGPoint, size: CGSize) -> SwipePosition {
 
         if point.y >= size.height * verticalBorder {
             return .bottom
@@ -78,7 +78,7 @@ open class TapCardView: UIView {
         }
     }
 
-    public func flipCard(type: TapPosition) {
+    public func flipCard(type: SwipePosition) {
 
         if type == .bottom { return }
 

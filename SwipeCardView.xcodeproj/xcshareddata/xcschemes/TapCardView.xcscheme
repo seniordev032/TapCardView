@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D405EE221FF8D9E600D8450A"
-               BuildableName = "TapCardView.framework"
-               BlueprintName = "TapCardView"
-               ReferencedContainer = "container:TapCardView.xcodeproj">
+               BuildableName = "SwipeCardView.framework"
+               BlueprintName = "SwipeCardView"
+               ReferencedContainer = "container:SwipeCardView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D405EE221FF8D9E600D8450A"
-            BuildableName = "TapCardView.framework"
-            BlueprintName = "TapCardView"
-            ReferencedContainer = "container:TapCardView.xcodeproj">
+            BuildableName = "SwipeCardView.framework"
+            BlueprintName = "SwipeCardView"
+            ReferencedContainer = "container:SwipeCardView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D405EE221FF8D9E600D8450A"
-            BuildableName = "TapCardView.framework"
-            BlueprintName = "TapCardView"
-            ReferencedContainer = "container:TapCardView.xcodeproj">
+            BuildableName = "SwipeCardView.framework"
+            BlueprintName = "SwipeCardView"
+            ReferencedContainer = "container:SwipeCardView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

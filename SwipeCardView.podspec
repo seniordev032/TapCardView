@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "TapCardView"
+  s.name         = "SwipeCardView"
   s.version      = "1.0.4"
-  s.summary      = "UIView to detect a tap position."
+  s.summary      = "UIView to detect a tap position for swipe."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  UIView to detect a tap position. If you do customize, Tinder like card UI is a possible.
+  UIView to detect a tap position. If you do customize, Tinder-style card UI is a possible.
                    DESC
 
-  s.homepage     = "https://github.com/shima11/TapCardView"
+  s.homepage     = "https://github.com/seniordev32/SwipeCardView"
   #s.screenshots  = "https://github.com/shima11/TapCardView/demo.gif","https://github.com/shima11/TapCardView/demo.png"
 
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "shima" => "shima.jin@icloud.com" }
+  s.author             = { "Senior developer" => "senior.dev32@gmail.com" }
   # Or just: s.author    = "shima"
   # s.authors            = { "shima" => "shima.jin@icloud.com" }
   # s.social_media_url   = "http://twitter.com/shima"
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source       = { :git => "http://EXAMPLE/TapCardView.git", :tag => "#{s.version}" }
-  s.source = { :git => "https://github.com/shima11/TapCardView.git", :tag => "#{s.version}"}
+  s.source = { :git => "https://github.com/seniordev32/SwipeCardView.git", :tag => "#{s.version}"}
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "TapCardView", "TapCardView/**/*.{h,m}"
+  s.source_files  = "SwipeCardView", "SwipeCardView/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

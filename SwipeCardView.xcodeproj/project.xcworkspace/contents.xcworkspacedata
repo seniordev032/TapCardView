@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TapCardView.xcodeproj">
+      location = "self:/Volumes/User/_Github_/TapCardView/SwipeCardView.xcodeproj">
    </FileRef>
 </Workspace>

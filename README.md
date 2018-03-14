@@ -1,13 +1,13 @@
-# TapCardView
-UIView to detect a tap position.
-If you do customize, Tinder like card UI is a possible.
+# SwipeCardView
+UIView to detect a tap position for swipe.
+If you do customize, Tinder-style card UI is a possible.
 
-TapCardView is to detect a tap position as left, right, bottom.
+SwipeCardView is to detect a tap position as left, right, bottom.
 And a flip animation is a possible.
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Version](https://img.shields.io/cocoapods/v/TapCardView.svg?style=flat)](http://cocoapods.org/pods/DataSources)
-[![License](https://img.shields.io/cocoapods/l/TapCardView.svg?style=flat)](http://cocoapods.org/pods/TapCardView)
+[![Version](https://img.shields.io/cocoapods/v/SwipeCardView.svg?style=flat)](http://cocoapods.org/pods/DataSources)
+[![License](https://img.shields.io/cocoapods/l/SwipeCardView.svg?style=flat)](http://cocoapods.org/pods/SwipeCardView)
  ![Swift 3.x](https://img.shields.io/badge/Swift-3.x-orange.svg)
  [![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
@@ -17,10 +17,10 @@ And a flip animation is a possible.
 # Install
 
 ### Carthage
-For installing with Carthage, add it to your Cartfile.
+Installing with Carthage, add it to your Cartfile.
 
 ```
-github "shima11/TapCardView"
+github "seniordev32/SwipeCardView"
 ```
 
 Do this command with terminal.
@@ -29,14 +29,14 @@ Do this command with terminal.
 $ carthage update
 ```
 
-Then, You need to add `TapCardView.framework` to your project.
+Then, You need to add `SwipeCardView.framework` to your project.
 
 ### CocoaPods
 
 For installing with CocoaPods, add it to your Podfile.
 
 ```
-pod "TapCardView", :git => "https://github.com/shima11/TapCardView.git"
+pod "SwipeCardView", :git => "https://github.com/seniordev32/SwipeCardView.git"
 ```
 
 Do this command with terminal.
@@ -47,9 +47,9 @@ $ pod update
 
 # Usage
 
-TapCarView is devides Tap position into left, right, bottom.
-`horizontalBorder` of property decides horizontal border of Tap position.
-`verticalBorder` of property decides vertical border of Tap position.
+SwipeCarView is devides Swipe position into left, right, bottom.
+`horizontalBorder` of property decides horizontal border of Swipe position.
+`verticalBorder` of property decides vertical border of Swipe position.
 
 ![](demo2.png)
 
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
       super.viewDidLoad()
 
       let frame = CGRect(x:100, y:100, width:300, height:400)
-      let cardView = TapCardView(frame: frame)
+      let cardView = SwipeCardView(frame: frame)
       cardView.delegate = self
       view.addSubView(cardView)
     }
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
 
 extension ViewController: CardViewDelegate {
 
-    func tapPosition(type: TapPosition, sender: TapCardView) {
+    func tapPosition(type: SwipePosition, sender: SwipeCardView) {
 
         print(type)
 
@@ -88,7 +88,7 @@ extension ViewController: CardViewDelegate {
 ```
 
 ## Customization
-If you do customize like `Demo/CustomTapCardView`, Tinder like card UI is a possible.
+If you do customize like `Example/CustomSwipeCardView`, Tinder-style card UI is a possible.
 
 # Licence
 

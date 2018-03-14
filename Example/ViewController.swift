@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Demo
+//  Example
 //
-//  Created by jinsei shima on 2017/12/31.
-//  Copyright © 2017 jinsei shima. All rights reserved.
+//  Created by @Senior dev on 2018/03/04.
+//  Copyright © 2018 @Senior dev. All rights reserved.
 //
 
 import UIKit
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         }
 
         let frame = CGRect(x: 0, y: 0, width: 300, height: 400)
-        let card = CustomTapCardView(frame: frame, datas: images)
+        let card = CustomSwipeCardView(frame: frame, datas: images)
         card.delegate = self
         card.center = view.center
         card.layer.cornerRadius = 8.0
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
 extension ViewController: CardViewDelegate {
 
-    func tapPosition(type: TapPosition, sender: TapCardView) {
+    func tapPosition(type: SwipePosition, sender: SwipeCardView) {
 
         print(type)
         

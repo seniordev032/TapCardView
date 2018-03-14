@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Demo
+//  Example
 //
-//  Created by jinsei shima on 2017/12/31.
-//  Copyright © 2017 jinsei shima. All rights reserved.
+//  Created by @Senior dev on 2018/03/04.
+//  Copyright © 2018 @Senior dev. All rights reserved.
 //
 
 import UIKit
